@@ -1,0 +1,154 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url('../images/bg.jpg') center center/cover no-repeat;
+    height: 100%;
+}
+.header {
+    background: #4A4F56;
+    text-align: center;
+    width: 793px;
+    margin: 0 auto;
+}
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #FF8984;
+    margin: 0;
+    padding: 19px 0 4px 0;
+}
+
+input {
+    display: block;
+    width: 534px;
+    height: 45px;
+    margin: 0 auto;
+    
+}
+
+button {
+    width: 534px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FF8984;
+    background: #4A4F56;
+    padding: 12px 0;
+    border: none;
+    margin: 45px 0px;
+    cursor: pointer;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FF8984;
+    padding-bottom: 12px;
+}
+
+.form {
+    width: 793px;
+    background: #3B3F45;
+    margin: 0 auto;
+
+}
+
+.wrapper {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 534px;
+}
+
+
+.btn {
+    text-align: center;
+}
+
+.checkbox {
+    position: relative;
+    background: #88839E;
+}
+
+.checkbox-input {
+    display: none;
+    position: absolute;
+}
+
+.checkbox-label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding-left: 40px;
+    cursor: pointer;
+    height: 45px;
+}
+
+input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+    color: #9B96AC;
+} 
+
+span {
+    font-weight: 400;
+    font-size: 11px;
+    padding-left: 4px;
+}
+
+.checkbox-label::before {
+    content: '';
+    display: block;
+    width: 19px;    
+    height: 19px;
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    background: #FFFFFF;
+    z-index: 1;
+}
+
+.checkbox-label::after {
+    content: '';
+    display: block;
+    width: 13px;    
+    height: 10px;
+    background: url("../images/Vector.svg") no-repeat;
+    background-size: 13px 10px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    top: 17px;
+    left: 10px;
+    transition: all .1s ease-in;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+    background-color: #FFFFFF;
+}
+
+
+.checkbox-input:checked + .checkbox-label::after {
+    opacity: 1;
+}
+
+.checkbox-label:hover {
+    background: #625E77;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.checkbox:nth-child(2n+1) {
+    background: #88839E;
+}
+
+.checkbox:nth-child(2n) {
+    background: #7A7593;
+}
+
